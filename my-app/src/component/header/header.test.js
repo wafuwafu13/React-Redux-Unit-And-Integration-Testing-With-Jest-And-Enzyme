@@ -20,16 +20,11 @@ describe('Header Component', () => {
     })
 
     it('Should render without errors', () => {
-        // const component = setUp()
-        // console.log(component.debug())
-        // const wrapper = component.find('.headerComponent')
-        // const wrapper = component.find(`[data-test='headerComponent']`)
         const wrapper = findByTestAttr(component, 'headerComponent')
         expect(wrapper.length).toBe(1)
     })
 
     it('Should render a logo', () => {
-        // const component = setUp()
         const logo = findByTestAttr(component, 'LogoIMG')
         expect(logo.length).toBe(1)
     })
